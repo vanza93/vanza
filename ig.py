@@ -436,7 +436,7 @@ class instagram:
             self.Exit()
 
     def sixAPI(self,six_id):
-        url = "https://i.instagram.com/web/search/topsearch/?context=blended&query="+six_id+"&rank_token=0.3953592318270893&count=1"
+        url = "https://www.instagram.com/web/search/topsearch/?context=blended&query="+six_id+"&rank_token=0.3953592318270893&count=1"
         x = requests.get(url)
         x_jason = x.json()
         uid = str( x_jason['users'][0].get("user").get("pk") )
@@ -466,7 +466,7 @@ class instagram:
 
     def searchAPI(self,cookie,nama):
         try:
-            x=s.get('https://i.instagram.com/web/search/topsearch/?count=100000&context=blended&query=%s&rank_token=0.21663777590422106&include_reel=true'%(nama),cookies=cookie,headers={"user-agent":USN})
+            x=s.get('https://www.instagram.com/web/search/topsearch/?count=100000&context=blended&query=%s&rank_token=0.21663777590422106&include_reel=true'%(nama),cookies=cookie,headers={"user-agent":USN})
             x_jason=json.loads(x.text)
             for i in x_jason['users']:
                 user=i['user']
