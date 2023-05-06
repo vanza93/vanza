@@ -36,7 +36,7 @@ from random import randint
 from time import sleep as slp
 from os import system as cmd
 from zlib import decompress 
-import pyfiglet
+from import pyfiglet
 
 oks = []
 cps = []
