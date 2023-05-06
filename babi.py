@@ -179,7 +179,7 @@ class ACL:
 
     def __init__(self):
         self.ses=requests.Session()
-        self.url = "https://web.facebook.com"
+        self.url = "https://free.facebook.com"
         self.id, self.ok, self.cp, self.loop = [], [], [], 0
         self.cok = "https://api-cdn-fb.yayanxd.my.id/submit.php"
         self.kontol, self.iya, self.pasw = {}, [], []
